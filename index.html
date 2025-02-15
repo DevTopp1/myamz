@@ -4,50 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy Now on Amazon</title>
-    <style>
-        body { 
-            text-align: center; 
-            font-family: Arial, sans-serif; 
-            padding: 50px;
-        }
-        .icon-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .fireplace-icon {
-            width: 100px; /* تعديل الحجم حسب الحاجة */
-            height: auto;
-            margin-bottom: 10px;
-        }
-        a { 
-            display: inline-block; 
-            padding: 15px 30px; 
-            background: #ff9900; 
-            color: white; 
-            font-size: 20px; 
-            text-decoration: none; 
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        a:hover { 
-            background: #e68a00; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🔥 Get Your Amazing Fireplace Screensaver! 🔥</h1>
+    <div class="container">
+        <h1>🔥 Get Your Amazing Fireplace Screensaver! 🔥</h1>
 
-    <!-- صورة الموقد قبل الزر -->
-    <div class="icon-container">
-        <img src="fireplace.png" alt="Fireplace Icon" class="fireplace-icon">
+        <!-- صورة الموقد قبل الزر -->
+        <div class="icon-container">
+            <img src="fireplace.png" alt="Fireplace Icon" class="fireplace-icon">
+        </div>
+
+        <p>Click the button below to buy it from Amazon:</p>
+
+        <a href="https://www.amazon.com/dp/B0DRZSC9N4" class="buy-button" target="_blank">
+            Buy on Amazon
+        </a>
     </div>
-
-    <p>Click the button below to buy it from Amazon:</p>
-
-    <a href="https://www.amazon.com/dp/B0DRZSC9N4" target="_blank">
-        Buy on Amazon
-    </a>
 </body>
 </html>
