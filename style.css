@@ -1,11 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* ضبط الصفحة بالكامل */
+body { 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
 
+/* تخصيص الحاوية */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -15,37 +17,55 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* عنوان رئيسي */
 h1 {
     color: #d9534f;
 }
 
-.fireplace-icon {
-    width: 150px;
-    height: auto;
-    margin: 20px 0;
+/* أيقونة الموقد */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
+.fireplace-icon {
+    width: 150px; /* حجم الأيقونة */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* زر الشراء */
 .buy-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 15px 30px;
+    background: #ff9900;
     color: white;
-    background-color: #ff9900;
+    font-size: 20px;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .buy-button:hover {
-    background-color: #cc7a00;
+    background: #e68a00;
+    transform: scale(1.05);
 }
 
+/* تحسين العرض على الشاشات الصغيرة */
 @media (max-width: 768px) {
     .container {
         max-width: 90%;
     }
 
     .fireplace-icon {
-        width: 100px;
+        width: 120px;
+    }
+
+    .buy-button {
+        font-size: 18px;
+        padding: 12px 25px;
     }
 }
