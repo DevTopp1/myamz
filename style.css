@@ -1,4 +1,3 @@
-/* ضبط الصفحة بالكامل */
 body { 
     text-align: center; 
     font-family: Arial, sans-serif; 
@@ -7,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* تخصيص الحاوية */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -17,12 +15,10 @@ body {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* عنوان رئيسي */
 h1 {
     color: #d9534f;
 }
 
-/* أيقونة الموقد */
 .icon-container {
     display: flex;
     flex-direction: column;
@@ -31,12 +27,11 @@ h1 {
 }
 
 .fireplace-icon {
-    width: 150px; /* حجم الأيقونة */
+    width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
 
-/* زر الشراء */
 .buy-button {
     display: inline-block;
     padding: 15px 30px;
@@ -54,7 +49,16 @@ h1 {
     transform: scale(1.05);
 }
 
-/* تحسين العرض على الشاشات الصغيرة */
+.privacy-link {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.privacy-link a {
+    color: #555;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .container {
         max-width: 90%;
